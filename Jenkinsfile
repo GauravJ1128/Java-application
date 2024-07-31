@@ -7,10 +7,10 @@ pipeline{
 
         stage("Git chcekout") {
             steps{
-                gitCheckout{
+                gitCheckout(
                     git branch: 'main', 
                     url: 'https://github.com/GauravJ1128/Java-application.git'
-                }
+                )
             }
         }
     }
