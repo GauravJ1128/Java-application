@@ -1,12 +1,12 @@
-@Library('Jenkins_lib')
+@Library('Jenkins_lib') _
 
-pipeline {
+pipeline{
     agent any
 
-    stages {
+    stages{
 
         stage("Git chcekout") {
-            steps {
+            steps{
                 gitChcekout{
                     git branch: 'main', 
                     url: 'https://github.com/GauravJ1128/Java-application.git'
